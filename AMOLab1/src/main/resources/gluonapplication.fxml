@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="360.0" style="-fx-background-color: #FFFFFF;" stylesheets="@material-fx-v0_3.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gluonapplication.GluonApplicationContoller">
+   <children>
+      <TabPane prefHeight="1027.0" prefWidth="360.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Lineal">
+               <content>
+                  <VBox prefHeight="285.0" prefWidth="340.0" styleClass="card">
+                     <children>
+                        <Label prefWidth="169.0" style="-fx-text-fill: #2196F3;" styleClass="card-title" text="Lineal algorithm" textFill="#2196f3" />
+                        <Label prefHeight="18.0" prefWidth="324.0" styleClass="card-subtitle" text="Expression:" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@lineal.PNG" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="18.0" prefWidth="324.0" styleClass="card-subtitle" text="Enter &quot;a&quot; value:" />
+                        <TextField fx:id="linealAField" />
+                        <HBox spacing="10.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handleLinealCOMPUTE" prefWidth="160.0" styleClass="button-raised" text="COMPUTE">
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </Button>
+                              <Button cancelButton="true" mnemonicParsing="false" onAction="#handleLinealClean" prefWidth="160.0" styleClass="button-raised" text="CLEAN FIELD">
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets top="16.0" />
+                           </padding>
+                        </HBox>
+                        <Label prefHeight="35.0" prefWidth="311.0" styleClass="card-subtitle" text="The result of the execution of this algorithm:" />
+                        <TextField fx:id="linealResultField" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+          </Tab>
+          <Tab text="Branched">
+               <content>
+                  <VBox styleClass="card">
+                     <children>
+                        <Label prefHeight="40.0" prefWidth="196.0" style="-fx-text-fill: #2196F3;" styleClass="card-title" text="Branched algorithm" textFill="#2196f3" />
+                        <Label prefHeight="18.0" prefWidth="324.0" styleClass="card-subtitle" text="Expression:" />
+                        <ImageView fitHeight="30.0" fitWidth="212.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@branching.PNG" />
+                           </image>
+                        </ImageView>
+                        <HBox>
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="110.0" styleClass="card-subtitle" text="Enter &quot;k&quot; value:" />
+                              <TextField fx:id="branchedKField" prefHeight="29.0" prefWidth="218.0" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="110.0" styleClass="card-subtitle" text="Enter &quot;x&quot; value:" />
+                              <TextField fx:id="branchedXField" prefHeight="29.0" prefWidth="218.0" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="110.0" styleClass="card-subtitle" text="Enter &quot;f&quot; value:" />
+                              <TextField fx:id="branchedFField" prefHeight="29.0" prefWidth="218.0" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="110.0" styleClass="card-subtitle" text="Enter &quot;g&quot; value:" />
+                              <TextField fx:id="branchedGField" prefHeight="29.0" prefWidth="218.0" />
+                           </children>
+                        </HBox>
+                        <HBox spacing="10.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handleBranchedCOMPUTE" prefWidth="160.0" styleClass="button-raised" text="COMPUTE">
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </Button>
+                              <Button cancelButton="true" mnemonicParsing="false" onAction="#handleBranchedClean" prefWidth="160.0" styleClass="button-raised" text="CLEAN FIELD">
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets top="16.0" />
+                           </padding>
+                        </HBox>
+                        <Label styleClass="card-subtitle" text="The result of the execution of this algorithm:" />
+                        <TextField fx:id="branchedResultField" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+          </Tab>
+            <Tab text="Cyclic">
+               <content>
+                  <VBox styleClass="card">
+                     <children>
+                        <Label prefHeight="40.0" prefWidth="196.0" style="-fx-text-fill: #2196F3;" styleClass="card-title" text="Cyclic algorithm" textFill="#2196f3" />
+                        <Label prefHeight="18.0" prefWidth="324.0" styleClass="card-subtitle" text="Expression:" />
+                        <ImageView fitHeight="93.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@cyclical.PNG" />
+                           </image>
+                        </ImageView>
+                        <Label />
+                        <Button mnemonicParsing="false" onAction="#handleCyclicCOMPUTE" prefWidth="350.0" styleClass="button-raised" text="COMPUTE">
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </Button>
+                        <Label styleClass="card-subtitle" text="The result of the execution of this algorithm:" />
+                        <TextField fx:id="cyclicResultField" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
